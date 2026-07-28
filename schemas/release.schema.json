@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://55515-code.github.io/open-provenance-knowledge/schemas/release.schema.json",
+  "type": "object",
+  "required": ["schema_version", "release", "generated_at", "source_cutoff", "record_count", "build_revision", "artifacts"],
+  "properties": {
+    "schema_version": {"const": "1.0.0"},
+    "release": {"type": "string"},
+    "generated_at": {"type": "string", "format": "date-time"},
+    "source_cutoff": {"type": "string", "format": "date"},
+    "record_count": {"type": "integer", "minimum": 1},
+    "build_revision": {"type": "string"},
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["path", "media_type", "bytes", "sha256"],
+        "properties": {
+          "path": {"type": "string", "pattern": "^(?!/)(?!.*\\.\\.)"},
+          "media_type": {"type": "string"},
+          "bytes": {"type": "integer", "minimum": 0},
+          "sha256": {"type": "string", "pattern": "^[0-9a-f]{64}$"}
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

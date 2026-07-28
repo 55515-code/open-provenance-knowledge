@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://55515-code.github.io/open-provenance-knowledge/schemas/relationship.schema.json",
+  "type": "object",
+  "required": ["id", "type", "subject_id", "predicate", "object_id", "status", "source_ids", "note"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^relationship:"},
+    "type": {"const": "relationship"},
+    "subject_id": {"type": "string"},
+    "predicate": {"enum": ["uses-envelope", "defines-predicate", "represents-inventory", "overlaps-with", "not-equivalent-to"]},
+    "object_id": {"type": "string"},
+    "status": {"enum": ["supported", "disputed", "needs-verification"]},
+    "source_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "note": {"type": "string"}
+  },
+  "additionalProperties": false
+}
+

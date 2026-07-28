@@ -1,0 +1,17 @@
+{
+  "id": "upstream:in-toto-interoperability-crosswalk",
+  "type": "upstream-mapping",
+  "target": "in-toto Attestation Framework documentation",
+  "contribution_url": "https://github.com/in-toto/attestation/blob/main/CONTRIBUTING.md",
+  "requirements_verified_at": "2026-07-28",
+  "mapped_record_ids": [
+    "https://55515-code.github.io/open-provenance-knowledge/id/standard/slsa/1.2",
+    "https://55515-code.github.io/open-provenance-knowledge/id/standard/in-toto-attestation/1.2",
+    "https://55515-code.github.io/open-provenance-knowledge/id/standard/spdx/3.0.1",
+    "https://55515-code.github.io/open-provenance-knowledge/id/standard/cyclonedx/1.7"
+  ],
+  "proposed_payload": "A concise documentation crosswalk explaining how vetted SLSA, SPDX, and CycloneDX predicates relate to the in-toto statement and envelope layers.",
+  "status": "draft",
+  "synchronization": "Revalidate mappings after either repository changes a referenced major or minor specification version; record upstream disposition without implying endorsement."
+}
+

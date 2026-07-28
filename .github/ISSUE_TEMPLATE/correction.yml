@@ -1,0 +1,42 @@
+name: Evidence-backed correction
+description: Correct or challenge a published claim.
+title: "Correction: "
+labels: ["needs-verification"]
+body:
+  - type: input
+    id: record
+    attributes: {label: Affected canonical record ID}
+    validations: {required: true}
+  - type: textarea
+    id: change
+    attributes: {label: Proposed change}
+    validations: {required: true}
+  - type: input
+    id: source
+    attributes: {label: Primary source URL}
+    validations: {required: true}
+  - type: textarea
+    id: context
+    attributes: {label: Source date and geographic/institutional context}
+    validations: {required: true}
+  - type: textarea
+    id: conflicts
+    attributes: {label: Contrary evidence or conflicts}
+    validations: {required: true}
+  - type: textarea
+    id: verification
+    attributes: {label: Verification method and content hash}
+    validations: {required: true}
+  - type: textarea
+    id: license
+    attributes: {label: License compatibility}
+    validations: {required: true}
+  - type: textarea
+    id: automation
+    attributes: {label: Machine-assistance disclosure and human-review status}
+    validations: {required: true}
+  - type: textarea
+    id: impact
+    attributes: {label: Expected downstream impact}
+    validations: {required: true}
+

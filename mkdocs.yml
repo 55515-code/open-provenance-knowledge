@@ -1,0 +1,15 @@
+site_name: Open Provenance Knowledge
+site_url: https://55515-code.github.io/open-provenance-knowledge/
+repo_url: https://github.com/55515-code/open-provenance-knowledge
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - Interoperability: interoperability.md
+  - Methodology: methodology.md
+  - Contributing: contributing.md
+  - Governance: governance.md
+  - Security: security.md
+docs_dir: site-content
+site_dir: site
+strict: true

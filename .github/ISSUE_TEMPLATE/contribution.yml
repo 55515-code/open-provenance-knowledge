@@ -1,0 +1,23 @@
+name: Knowledge contribution
+description: Propose a source, contradiction, translation, mapping, or integration.
+title: "Contribution: "
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Contribution type
+      options: [New source, Contradictory evidence, Translation, Provenance improvement, Upstream mapping, Downstream integration]
+    validations: {required: true}
+  - type: input
+    id: record
+    attributes: {label: Affected or proposed record ID}
+    validations: {required: true}
+  - type: textarea
+    id: evidence
+    attributes: {label: Evidence, source date, context, and verification}
+    validations: {required: true}
+  - type: textarea
+    id: disclosure
+    attributes: {label: License, conflicts, automation, review, and downstream impact}
+    validations: {required: true}
+

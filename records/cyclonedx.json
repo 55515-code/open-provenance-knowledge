@@ -1,0 +1,22 @@
+{
+  "id": "https://55515-code.github.io/open-provenance-knowledge/id/standard/cyclonedx/1.7",
+  "type": "standard-profile",
+  "title": "CycloneDX 1.7",
+  "claim": "CycloneDX 1.7 defines a modular bill-of-materials model for components, services, dependencies, vulnerabilities, formulation, declarations, and related supply-chain information.",
+  "status": "supported",
+  "specification": {"name": "CycloneDX", "version": "1.7", "observed_at": "2026-07-28"},
+  "languages": ["en"],
+  "regions": ["global"],
+  "source_ids": ["source:cyclonedx-1.7"],
+  "conflicts": [],
+  "unresolved_questions": ["How consistently will new 1.7 capabilities be implemented by existing tools?"],
+  "context": {"geographic": "Global technical standard with English-language primary documentation.", "institutional": "OWASP Foundation and Ecma International TC54."},
+  "capabilities": {"identity": "primary", "digest": "supported", "provenance": "supported", "sbom": "primary", "relationships": "primary", "signing": "supported", "serialization": "primary"},
+  "trust": {"source_identity": "high", "evidentiary_strength": "high", "reproducibility": "high", "freshness": "high", "geographic_diversity": "unknown", "viewpoint_diversity": "medium", "institutional_independence": "medium", "conflict_of_interest_risk": "unknown", "cryptographic_verification": "low", "transformation_transparency": "high", "human_review": "medium"},
+  "created_at": "2026-07-28T00:00:00Z",
+  "verified_at": "2026-07-28T00:00:00Z",
+  "updated_at": "2026-07-28T00:00:00Z",
+  "supersedes": [],
+  "superseded_by": null
+}
+

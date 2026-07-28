@@ -1,0 +1,22 @@
+{
+  "id": "https://55515-code.github.io/open-provenance-knowledge/id/standard/in-toto-attestation/1.2",
+  "type": "standard-profile",
+  "title": "in-toto Attestation Framework 1.2",
+  "claim": "The in-toto Attestation Framework 1.2 defines statement, predicate, envelope, and bundle layers for authenticated metadata about software artifacts.",
+  "status": "supported",
+  "specification": {"name": "in-toto Attestation Framework", "version": "1.2", "observed_at": "2026-07-28"},
+  "languages": ["en"],
+  "regions": ["global"],
+  "source_ids": ["source:in-toto-attestation-1.2"],
+  "conflicts": [],
+  "unresolved_questions": ["Which envelope profiles will become dominant across registries?"],
+  "context": {"geographic": "Global technical project with English-language primary documentation.", "institutional": "in-toto project under the Cloud Native Computing Foundation."},
+  "capabilities": {"identity": "primary", "digest": "primary", "provenance": "supported", "sbom": "indirect", "relationships": "primary", "signing": "primary", "serialization": "primary"},
+  "trust": {"source_identity": "high", "evidentiary_strength": "high", "reproducibility": "high", "freshness": "high", "geographic_diversity": "unknown", "viewpoint_diversity": "medium", "institutional_independence": "medium", "conflict_of_interest_risk": "unknown", "cryptographic_verification": "low", "transformation_transparency": "high", "human_review": "medium"},
+  "created_at": "2026-07-28T00:00:00Z",
+  "verified_at": "2026-07-28T00:00:00Z",
+  "updated_at": "2026-07-28T00:00:00Z",
+  "supersedes": [],
+  "superseded_by": null
+}
+

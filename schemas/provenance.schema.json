@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://55515-code.github.io/open-provenance-knowledge/schemas/provenance.schema.json",
+  "type": "object",
+  "required": ["id", "type", "artifact_ids", "activity", "started_at", "ended_at", "tool", "tool_version", "inputs", "review_state", "reproduction"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^provenance:"},
+    "type": {"const": "provenance-event"},
+    "artifact_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "activity": {"type": "string"},
+    "started_at": {"type": "string", "format": "date-time"},
+    "ended_at": {"type": "string", "format": "date-time"},
+    "tool": {"type": "string"},
+    "tool_version": {"type": "string"},
+    "inputs": {"type": "array", "items": {"type": "string"}},
+    "review_state": {"enum": ["human-reviewed", "agent-assisted", "unreviewed"]},
+    "reproduction": {"type": "string"}
+  },
+  "additionalProperties": false
+}
+

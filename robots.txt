@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://55515-code.github.io/open-provenance-knowledge/sitemap.xml

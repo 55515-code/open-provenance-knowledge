@@ -1,0 +1,5 @@
+schema_version,id,title,version,identity,digest,provenance,sbom,relationships,signing,serialization
+1.0.0,https://55515-code.github.io/open-provenance-knowledge/id/standard/cyclonedx/1.7,CycloneDX 1.7,1.7,primary,supported,supported,primary,primary,supported,primary
+1.0.0,https://55515-code.github.io/open-provenance-knowledge/id/standard/in-toto-attestation/1.2,in-toto Attestation Framework 1.2,1.2,primary,primary,supported,indirect,primary,primary,primary
+1.0.0,https://55515-code.github.io/open-provenance-knowledge/id/standard/slsa/1.2,SLSA 1.2,1.2,supported,primary,primary,out-of-scope,supported,indirect,supported
+1.0.0,https://55515-code.github.io/open-provenance-knowledge/id/standard/spdx/3.0.1,SPDX 3.0.1,3.0.1,primary,supported,supported,primary,primary,supported,primary

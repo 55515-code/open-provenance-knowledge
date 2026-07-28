@@ -1,0 +1,14 @@
+Open Provenance Knowledge uses two licenses:
+
+1. Software source code, scripts, workflows, and configuration are licensed
+   under the Apache License, Version 2.0. The full text is available at
+   https://www.apache.org/licenses/LICENSE-2.0
+
+2. Original records, datasets, schemas, and documentation are dedicated to the
+   public domain under CC0 1.0 Universal. The full legal code is available at
+   https://creativecommons.org/publicdomain/zero/1.0/legalcode
+
+Third-party source material remains under its original copyright and license.
+This repository publishes source metadata, hashes, relationships, and limited
+necessary quotations; it does not relicense third-party works.
+

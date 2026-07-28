@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://55515-code.github.io/open-provenance-knowledge/schemas/record.schema.json",
+  "title": "Published knowledge record",
+  "type": "object",
+  "required": ["id", "type", "title", "claim", "status", "specification", "languages", "regions", "source_ids", "conflicts", "unresolved_questions", "context", "trust", "created_at", "verified_at", "updated_at", "supersedes", "superseded_by", "content_hash"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^https://55515-code\\.github\\.io/open-provenance-knowledge/id/"},
+    "type": {"const": "standard-profile"},
+    "title": {"type": "string", "minLength": 1},
+    "claim": {"type": "string", "minLength": 1},
+    "status": {"enum": ["supported", "disputed", "superseded", "needs-verification"]},
+    "specification": {
+      "type": "object",
+      "required": ["name", "version", "observed_at"],
+      "properties": {
+        "name": {"type": "string"},
+        "version": {"type": "string"},
+        "observed_at": {"type": "string", "format": "date"}
+      },
+      "additionalProperties": false
+    },
+    "languages": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "regions": {"type": "array", "items": {"type": "string"}, "minItems": 1},
+    "source_ids": {"type": "array", "items": {"type": "string"}, "minItems": 1, "uniqueItems": true},
+    "conflicts": {"type": "array", "items": {"type": "string"}, "uniqueItems": true},
+    "unresolved_questions": {"type": "array", "items": {"type": "string"}},
+    "context": {
+      "type": "object",
+      "required": ["geographic", "institutional"],
+      "properties": {
+        "geographic": {"type": "string"},
+        "institutional": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "capabilities": {
+      "type": "object",
+      "additionalProperties": {"enum": ["primary", "supported", "indirect", "out-of-scope"]}
+    },
+    "trust": {
+      "type": "object",
+      "required": ["source_identity", "evidentiary_strength", "reproducibility", "freshness", "geographic_diversity", "viewpoint_diversity", "institutional_independence", "conflict_of_interest_risk", "cryptographic_verification", "transformation_transparency", "human_review"],
+      "additionalProperties": {"enum": ["high", "medium", "low", "unknown", "not-applicable"]}
+    },
+    "created_at": {"type": "string", "format": "date-time"},
+    "verified_at": {"type": "string", "format": "date-time"},
+    "updated_at": {"type": "string", "format": "date-time"},
+    "supersedes": {"type": "array", "items": {"type": "string"}},
+    "superseded_by": {"type": ["string", "null"]},
+    "content_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"}
+  },
+  "additionalProperties": false
+}
+

@@ -1,0 +1,11 @@
+[
+  {
+    "id": "downstream:self-example-python",
+    "type": "downstream-consumer",
+    "name": "Bundled dependency-free Python example",
+    "url": "https://github.com/55515-code/open-provenance-knowledge/tree/main/examples",
+    "status": "self-example",
+    "consumes": ["releases/manifest.json", "datasets/open-provenance-knowledge.sqlite"],
+    "endorsement": false
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://55515-code.github.io/open-provenance-knowledge/schemas/downstream-consumer.schema.json",
+  "type": "object",
+  "required": ["id", "type", "name", "url", "status", "consumes", "endorsement"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^downstream:"},
+    "type": {"const": "downstream-consumer"},
+    "name": {"type": "string"},
+    "url": {"type": "string", "format": "uri"},
+    "status": {"enum": ["self-example", "confirmed-external"]},
+    "consumes": {"type": "array", "items": {"type": "string"}},
+    "endorsement": {"const": false}
+  },
+  "additionalProperties": false
+}

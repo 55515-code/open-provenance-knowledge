@@ -1,0 +1,17 @@
+{
+  "notice": "Illustrative unsigned data. No signature or verification is claimed.",
+  "artifact": {"name": "example.bin", "digest": {"sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}},
+  "source_material": {"uri": "git+https://example.invalid/project@refs/heads/main", "digest": {"sha1": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}},
+  "in_toto_statement": {
+    "_type": "https://in-toto.io/Statement/v1",
+    "subject": [{"name": "example.bin", "digest": {"sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}}],
+    "predicateType": "https://slsa.dev/provenance/v1",
+    "predicate": {"buildDefinition": {"buildType": "https://example.invalid/build/v1", "externalParameters": {}, "resolvedDependencies": []}, "runDetails": {"builder": {"id": "https://example.invalid/builder"}, "metadata": {}}}
+  },
+  "envelope_relationship": {"format": "DSSE-compatible in-toto envelope", "present": false, "reason": "The example is intentionally unsigned."},
+  "inventory_references": {
+    "spdx": {"predicate_type": "https://in-toto.io/attestation/spdx3", "embedded": false},
+    "cyclonedx": {"predicate_type": "https://cyclonedx.org/bom", "embedded": false}
+  }
+}
+

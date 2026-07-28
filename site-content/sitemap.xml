@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/interoperability/</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/indexes/records.json</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/indexes/knowledge.jsonld</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/datasets/interoperability.csv</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/datasets/open-provenance-knowledge.sqlite</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/feeds/updates.atom</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/llms.txt</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/llms-full.txt</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/id/standard/cyclonedx/1.7</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/id/standard/in-toto-attestation/1.2</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/id/standard/slsa/1.2</loc></url>
+  <url><loc>https://55515-code.github.io/open-provenance-knowledge/id/standard/spdx/3.0.1</loc></url>
+</urlset>

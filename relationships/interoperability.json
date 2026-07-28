@@ -1,0 +1,43 @@
+[
+  {
+    "id": "relationship:slsa-uses-in-toto",
+    "type": "relationship",
+    "subject_id": "https://55515-code.github.io/open-provenance-knowledge/id/standard/slsa/1.2",
+    "predicate": "uses-envelope",
+    "object_id": "https://55515-code.github.io/open-provenance-knowledge/id/standard/in-toto-attestation/1.2",
+    "status": "supported",
+    "source_ids": ["source:slsa-1.2", "source:in-toto-attestation-1.2"],
+    "note": "SLSA's recommended provenance is expressed as a predicate within an in-toto Statement."
+  },
+  {
+    "id": "relationship:in-toto-spdx-predicate",
+    "type": "relationship",
+    "subject_id": "https://55515-code.github.io/open-provenance-knowledge/id/standard/in-toto-attestation/1.2",
+    "predicate": "defines-predicate",
+    "object_id": "https://55515-code.github.io/open-provenance-knowledge/id/standard/spdx/3.0.1",
+    "status": "supported",
+    "source_ids": ["source:in-toto-attestation-1.2", "source:spdx-3.0.1"],
+    "note": "The in-toto predicate registry includes SPDX predicate forms; this does not make SPDX and in-toto equivalent."
+  },
+  {
+    "id": "relationship:in-toto-cyclonedx-predicate",
+    "type": "relationship",
+    "subject_id": "https://55515-code.github.io/open-provenance-knowledge/id/standard/in-toto-attestation/1.2",
+    "predicate": "defines-predicate",
+    "object_id": "https://55515-code.github.io/open-provenance-knowledge/id/standard/cyclonedx/1.7",
+    "status": "supported",
+    "source_ids": ["source:in-toto-attestation-1.2", "source:cyclonedx-1.7"],
+    "note": "CycloneDX recognizes a BOM predicate type usable in in-toto attestations."
+  },
+  {
+    "id": "relationship:spdx-cyclonedx-not-equivalent",
+    "type": "relationship",
+    "subject_id": "https://55515-code.github.io/open-provenance-knowledge/id/standard/spdx/3.0.1",
+    "predicate": "not-equivalent-to",
+    "object_id": "https://55515-code.github.io/open-provenance-knowledge/id/standard/cyclonedx/1.7",
+    "status": "supported",
+    "source_ids": ["source:spdx-3.0.1", "source:cyclonedx-1.7"],
+    "note": "Both can represent SBOM information, but their models, scopes, and serializations are not interchangeable without a defined mapping."
+  }
+]
+

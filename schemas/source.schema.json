@@ -1,0 +1,24 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://55515-code.github.io/open-provenance-knowledge/schemas/source.schema.json",
+  "title": "Source metadata",
+  "type": "object",
+  "required": ["id", "type", "title", "canonical_url", "archived_url", "publisher", "published_at", "retrieved_at", "source_type", "license_status", "retrieval_status", "content_hash", "extraction_method"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^source:"},
+    "type": {"const": "official-specification"},
+    "title": {"type": "string"},
+    "canonical_url": {"type": "string", "format": "uri"},
+    "archived_url": {"type": ["string", "null"], "format": "uri"},
+    "publisher": {"type": "string"},
+    "published_at": {"type": ["string", "null"], "format": "date"},
+    "retrieved_at": {"type": "string", "format": "date-time"},
+    "source_type": {"enum": ["primary", "secondary"]},
+    "license_status": {"enum": ["documented", "unknown", "restricted"]},
+    "retrieval_status": {"enum": ["retrieved", "metadata-only", "unavailable"]},
+    "content_hash": {"type": "string", "pattern": "^sha256:[0-9a-f]{64}$"},
+    "extraction_method": {"type": "string"}
+  },
+  "additionalProperties": false
+}
+

@@ -16,7 +16,7 @@ jobs:
       - uses: astral-sh/setup-uv@d0d8abe699bfb85fec6de9f7adb5ae17292296ff # v6
         with:
           enable-cache: true
-      - run: uv sync --extra dev --frozen
+      - run: uv sync --python 3.12 --extra dev --frozen
       - run: uv run ruff check .
       - run: uv run pytest
       - run: uv run opk validate
@@ -33,4 +33,3 @@ jobs:
     steps:
       - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
       - uses: actions/dependency-review-action@2031cfc080254a8a887f58cffee85186f0e49e48 # v4.9.0
-
